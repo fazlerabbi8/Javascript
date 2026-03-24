@@ -55,23 +55,23 @@ function calculateFinalScore(obj) {
 
 
 
-// function waitingTime(waitingTimes, serialNumber) {
-//   if (!Array.isArray(waitingTimes)) {
-//     return "Invalid Input";
-//   }
+function waitingTime(waitingTimes, serialNumber) {
+  if (!Array.isArray(waitingTimes)) {
+    return "Invalid Input";
+  }
 
-//   if (typeof serialNumber !== "number") {
-//     return "Invalid Input";
-//   }
+  if (typeof serialNumber !== "number") {
+    return "Invalid Input";
+  }
 
-//   let len = waitingTimes.length;
-//   let sum = 0;
-//   for (let i of waitingTimes) {
-//     sum += i;
-//   }
-//   let average = Math.floor(sum / len);
+  let len = waitingTimes.length;
+  let sum = 0;
+  for (let i of waitingTimes) {
+    sum += i;
+  }
+  let average = Math.floor(sum / len);
 
-//   let remainPeople = serialNumber - 1 - len;
-//   let timeNeed = remainPeople * average;
-//   return timeNeed;
-// }
+  let remainPeople = serialNumber - 1 - len;
+  let timeNeed = remainPeople * average;
+  return timeNeed;
+}
