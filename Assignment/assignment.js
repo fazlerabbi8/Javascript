@@ -8,16 +8,16 @@ function calculateTax(income, expenses) {
 
 
 
-// function sendNotification(email) {
-//     const parts = email.split("@");
+function sendNotification(email) {
+    const parts = email.split("@");
 
-//     const userName = parts[0];
-//     const domain = parts[1];
+    const userName = parts[0];
+    const domain = parts[1];
 
-//     let message = userName + " " + "sent you an email from" + " " + domain;
-//     return message;
+    let message = userName + " " + "sent you an email from" + " " + domain;
+    return message;
 
-// }
+}
 
 
 
